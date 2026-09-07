@@ -1,0 +1,2 @@
+const router = require('express').Router(); const auth = require('../middlewares/auth'); const controller = require('../controllers/dogController');
+router.use(auth); router.post('/', controller.create); router.post('/:id/adopt', controller.adopt); router.delete('/:id', controller.remove); router.get('/registered', controller.listRegistered); router.get('/adopted', controller.listAdopted); module.exports = router;

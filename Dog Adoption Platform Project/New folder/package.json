@@ -1,0 +1,7 @@
+{
+  "name": "dog-adoption-platform-api", "version": "1.0.0", "description": "Secure REST API for listing and adopting dogs", "main": "app.js",
+  "scripts": { "start": "node app.js", "dev": "nodemon app.js", "test": "mocha --recursive tests --exit" },
+  "license": "ISC",
+  "dependencies": { "bcryptjs": "^2.4.3", "cors": "^2.8.5", "dotenv": "^16.4.5", "express": "^4.19.2", "jsonwebtoken": "^9.0.2", "mongoose": "^8.5.1" },
+  "devDependencies": { "chai": "^4.4.1", "mocha": "^10.7.0", "mongodb-memory-server": "^10.0.0", "nodemon": "^3.1.0", "supertest": "^7.0.0" }
+}
